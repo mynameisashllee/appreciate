@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ ur goats</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+        <span style="font-size: 1.5rem">🌓</span>
+        <div class="toggle-switch"></div>
+    </div>
+    <div class="container">
+        <div>i love my</div>
+        <div class="spinner" id="adjective">___</div>
+        <div class="custom-dropdown" id="custom-dropdown">
+            <div class="selected-option" onclick="toggleDropdown()">wife.</div>
+            <div class="options">
+                <div class="option" onclick="selectOption('wife.')">wife.</div>
+                <div class="option" onclick="selectOption('girlfriend.')">girlfriend.</div>
+                <div class="option" onclick="selectOption('long distance low commitment casual gf.')">long distance low commitment casual gf.</div>
+                <div class="option" onclick="selectOption('three-week situationship.')">three-week situationship.</div>
+            </div>
+        </div>
+        <button id="spin" onclick="spinAdjective()">▶︎</button>
+        <div id="link-container">
+            <input type="text" id="copy-link" readonly />
+            <button onclick="copyLink()">Copy</button>
+        </div>
+        <div id="copy-message"></div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
